@@ -14,14 +14,24 @@ body{
   float:right;
   height:100%
 }
+.main-wrapper {
+  width:79.1666666666%;
+  float:left;
+  height:100%
+}
+.main {
+  padding-right:10px; padding-left:10px
+}
 .header {
   height:40px;
   background-color:rgb(191,127,255);
   padding-right:10px; padding-left:10px;
   text-align:center
 }
-.main {
-  width:79.1666666666%;
-  float:left;
-  height:100%
+.footer {
+  display: flex;
+  height:30px; 
+  background-color:rgb(191,127,255); 
+  align-items: center;
+  justify-content: center;
 }
