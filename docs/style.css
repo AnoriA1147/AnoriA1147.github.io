@@ -1,0 +1,27 @@
+body{
+  font-family:Calibri;
+  font-size: 16px;
+}
+.leftside {
+  width:10.416666666%; max-width:141.969px;
+  background-color:rgb(223,159,255);
+  float:left;
+  height:100%
+}
+.rightside {
+  width:10.416666666%; max-width:141.969px;
+  background-color:rgb(223,159,255);
+  float:right;
+  height:100%
+}
+.header {
+  height:40px;
+  background-color:rgb(191,127,255);
+  padding-right:10px; padding-left:10px;
+  text-align:center
+}
+.main {
+  width:79.1666666666%;
+  float:left;
+  height:100%
+}
