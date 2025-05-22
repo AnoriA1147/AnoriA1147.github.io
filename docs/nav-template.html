@@ -1,0 +1,35 @@
+<!-- navbar.html -->
+/*this shouldn't be served to users*/
+<template id="site-nav-template">
+<style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 8px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #F2D03C;
+  }
+  .active {
+    background-color: #7F33CC;
+  }
+</style>
+<nav>
+  <ul style="height:20px; background-color:rgb(191,127,255); padding-right:10px; padding-left:10px">
+    <li> <a href="index"> Homepage </a></li>
+    <li> <a href="testtest"> Testtest </a></li>
+    <li> <a href="about"> About Me </a></li>
+    <li> <a href="gallery"> Gallery </a></li>
+  </ul>
+</nav>
+</template>
