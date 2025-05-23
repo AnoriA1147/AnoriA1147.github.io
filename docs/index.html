@@ -1,90 +1,64 @@
 <html>
 <head>
-    <title> Anori A </title>
-    <link rel="icon" type="image/png" href="/images/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        aside {
-          width: 320px;
-          padding-left: 15px;
-          padding-right: 15px;
-          float: right;
-          background-color: rgb(223,223,255);
-        }
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        li {
-          float: left;
-        }
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 0px 8px;
-          text-decoration: none;
-        }
-        li a:hover {
-          background-color: #F2D03C;
-        }
-        .active {
-          background-color: #7F33CC;
-        }
-    </style>
+  <title> Homepage - Anori A </title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    aside {
+      width: 320px;
+      padding-left: 15px;
+      padding-right: 15px;
+      float: right;
+      background-color: rgb(223,223,255);
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
 </head>
 
-<body style="font-family:Calibri;font-size: 16px;">
-
-<div style="height:40px; background-color:rgb(191,127,255); padding-right:10px; padding-left:10px; text-align:center">
-    <p style="display:contents; font-size:2em; font-weight:bold;">
-        Anori A's Homepage
-    </p>
-</div>
-
-<div style="height:90%">
-    <div style="float:left; width:10.416666666%; max-width:141.969px; background-color:rgb(223,159,255); height:100%"></div>
-
-    <div style="float:left; width:79.1666666666%;">
-        <nav><ul style="height:20px; background-color:rgb(191,127,255); padding-right:10px; padding-left:10px">
-          <li> <a href="index"> Homepage </a></li>
-          <li> <a href="testtest"> Testtest </a></li>
-          <li> <a href="about"> About Me </a></li>
-          <li> <a href="gallery"> Gallery </a></li>
-        </ul></nav>
-        <div style="padding-right:10px; padding-left:10px">
-            <aside>
-                <h3>Where you can find me</h3>
-                <p>
-                    <a href="https://www.youtube.com/channel/UC23h3hp57gLDbVI0v4b3e5A">My videos</a><br>
-                    <a href="https://en.pronouns.page/@AnoriA1147">My pronouns (pronouns.page)</a><br>
-                    <a href="https://pronombr.es/@AnoriA1147">Mis pronombres (pronombr.es)</a><br>
-                    <a href="https://bsky.app/profile/anoria1147.bsky.social">Find me on <del>Twitter</del> <del>X</del> bsky!</a><br>
-                    <a href="https://www.deviantart.com/anoria1147">DeviantArt</a><br>
-                    <br>
-                    <a href="https://www.tutorialspoint.com/online_html_editor.php">Created with tutorialspoint HTML editor!</a><br>
-                    <a href="https://www.w3schools.com/">Visit W3Schools.com!</a><br>
-                    <a href="https://colordesigner.io/convert/rgbtohsl">Color!</a>
-                </p>
-            </aside>
-            <p>Hallu! I'm Anori!</p>
-            <img src="images/anori_front_profile.png" alt="A cool cat" width="300">
-            <p>I am primarily an artist, animator, and writer.<br>
-            I have dabbled in a multitude of other interests (hyperfixations), ranging across computer science, astrophysics, biochemistry, music, and linguistics.</p>
-            <p>This site is barebones now, but it will hopefully have more soon! :3.</p>
-   
-        </div>
-    </div>
-
-    <div style="float:left; width:10.416666666%; max-width:141.969px; background-color:rgb(223,159,255); height:100%"></div>
-</div>
-
-<footer style="height:40px; background-color:rgb(191,127,255); padding-left:10.416666666%; padding-right:10.416666666%">
-  <div style="margin-top:11px; margin-bottom:11px; float:left">
-    &copy; 2025 Anori A. | Made with HTML & CSS | <a href="contact.html">Contact</a>
+<body>
+  <div class="header">
+    <h1>Anori A's Homepage</h1>
   </div>
-</footer>
-    
+  <div style="height:88%">
+    <div class="leftside"></div>
+    <div class="main-wrapper">
+      <div id="navbar"></div>
+      <script>
+        fetch('navbar.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+      </script>
+      <div class="main">
+        <aside>
+          <h3>Where you can find me</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/channel/UC23h3hp57gLDbVI0v4b3e5A" target="_blank">My videos</a>
+            <li><a href="https://en.pronouns.page/@AnoriA1147" target="_blank">My pronouns (pronouns.page)</a>
+            <li><a href="https://pronombr.es/@AnoriA1147" target="_blank">Mis pronombres (pronombr.es)</a>
+            <li><a href="https://bsky.app/profile/anoria1147.bsky.social" target="_blank">Find me on <del>Twitter</del> <del>X</del> bsky!</a>
+            <li><a href="https://www.deviantart.com/anoria1147" target="_blank">DeviantArt</a>
+          </ul>
+        </aside>
+
+        <p>Hallu! I'm Anori!</p>
+        <img src="images/anori_front_profile.png" alt="A cool cat" width="300">
+        <p>I am primarily an artist, animator, and writer.
+        <br>I have dabbled in a multitude of other interests (hyperfixations), ranging across computer science, astrophysics, biochemistry, music, and linguistics.</p>
+        <p>This site is barebones now, but it will hopefully have more soon! :3.</p>
+      </div>
+    </div>
+    <div class="rightside"></div>
+  </div>
+  <div class="footer">
+    <p>
+      &copy; 2025 Anori A. | Made with HTML & CSS | <a href="contact.html">Contact</a>
+    </p>
+  </div>
 </body>
 </html>
