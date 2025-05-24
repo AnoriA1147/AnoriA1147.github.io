@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /partials/
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://anoria.gay/sitemap.xml
