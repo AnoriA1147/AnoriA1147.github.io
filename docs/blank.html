@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title> title - Anori A </title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>title</h1>
+  </div>
+  <div style="height:88%">
+    <div class="leftside"></div>
+    <div class="main-wrapper">
+      <div id="navbar"></div>
+      <script>
+        fetch('navbar.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+      </script>
+      <div class="main">
+        <p> content </p>
+      </div>
+    </div>
+    <div class="rightside"></div>
+  </div>
+  <div class="footer">
+    <p>
+      &copy; 2025 Anori A. | Made with HTML & CSS | <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</body>
+</html>

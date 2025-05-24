@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title> About Me - Anori A </title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>About Me</h1>
+  </div>
+  <div style="height:88%">
+    <div class="leftside"></div>
+    <div class="main-wrapper">
+      <div id="navbar"></div>
+      <script>
+        fetch('navbar.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+      </script>
+      <div class="main">
+        <h3>Basic Info</h3>
+        <ul>
+          <li> You can call me Anori! 
+          <li> I go by any pronouns (he/they/she).
+          <li> I’m a gen Z person.
+          <li> My favourite colors are purple and yellow (shockingly).
+          <li> I’m bye-lingual: I learned English and Spanish and forgot how to speak both of them.
+          <li> I’m try-lingual: I tried to learn Chinese, and Russian, and Portuguese, and Latin, and Polish, and …
+          <li> I'm more of a creature than a critter.
+          <li> No I'm not British.
+        </ul>
+        <h3>Pronouns and Identity</h3>
+        <p><b>he/she/they</b>
+        <br>I'm generally fine with being called any pronouns and any gender. I don't really mind.
+        <br>Use he, she, or they. (Preferably not it).
+        <br>You can use them randomly, or as is convenient for the particular context.
+        <br>I am panromantic, transgender, genderfluid, and generally queer.
+        <br>I am <b>Neurodivergent</br>. 
+      </div>
+    </div>
+    <div class="rightside"></div>
+  </div>
+  <div class="footer">
+    <p>
+      &copy; 2025 Anori A. | Made with HTML & CSS | <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</body>
+</html>

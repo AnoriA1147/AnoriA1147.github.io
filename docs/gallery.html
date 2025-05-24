@@ -1,0 +1,98 @@
+<html>
+<head>
+  <title>Gallery - Anori A</title>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .imagecolumn {
+      <!--width: 50%;-->
+      display: inline-block;
+      margin:auto;
+      margin-top:0px;
+      padding: 5px
+    }
+    .imagebox {
+      border-style: double; 
+      border-width: 5px;
+      margin-bottom:5px;margin-top:5px;
+      padding: 5px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Gallery</h1>
+  </div>
+  <div style="height:400%">
+    <div class="leftside"></div>
+    <div class="main-wrapper">
+      <div id="navbar"></div>
+      <script>
+        fetch('navbar.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+      </script>
+      <div class="main">
+        <p>Here is some of my art! I don't have much yet, but this will expand over time.
+        <br>I work in multiple fields, so this page is split between each of those.</p>
+        <section>   
+          <h2>Sketeches and Digital Art</h2>
+          <div style="display: flex;">
+            <div class="imagecolumn" style="width:30%">
+              <div class="imagebox">
+                <img src="images/thumbnail.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/anori_front_profile.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/birbs.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/castle.png" alt="A cool cat" width=100%>
+              </div>
+            </div>
+            <div class="imagecolumn" style="width:30%">
+              <div class="imagebox">
+                <img src="images/IMG_3758.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/kero_lining_1a_final.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/anori_side_profile.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/blackcat.png" alt="A cool cat" width=100%>
+              </div>
+            </div>
+            <div class="imagecolumn" style="width:30%">
+              <div class="imagebox">
+                <img src="images/anori_standing.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/blackcat_line.png" alt="A cool cat" width=100%>
+              </div>
+              <div class="imagebox">
+                <img src="images/pinkblackcat.png" alt="A cool cat" width=100%>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2>Animation</h2>
+        <h2>Writing</h2>
+      </div>
+    </div>
+    <div class="rightside"></div>
+  </div>
+  <div class="footer">
+    <p>
+      &copy; 2025 Anori A. | Made with HTML & CSS | <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</body>
+</html>
