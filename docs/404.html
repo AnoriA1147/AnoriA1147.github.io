@@ -27,14 +27,8 @@
   <div style="height:88%">
     <div class="leftside"></div>
     <div class="main-wrapper">
-      <div id="navbar"></div>
-      <script>
-        fetch('/partials/navbar.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-      </script>
+      <div id="navbar-placeholder"></div>
+      <script src="/navbar.js" defer></script>
       <div class="main">
         <img src="/images/404tempwowthisimageisbad.jpg" alt="X eyes, tounge out, knocked out Anori sketch" width="265">
         <p>Uhoh! It seems the requested resource was not found.<br>

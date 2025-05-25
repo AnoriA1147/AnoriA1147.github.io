@@ -49,14 +49,8 @@
   <div style="height:400%">
     <div class="leftside"></div>
     <div class="main-wrapper">
-      <div id="navbar"></div>
-      <script>
-        fetch('/partials/navbar.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-          });
-      </script>
+      <div id="navbar-placeholder"></div>
+      <script src="/navbar.js" defer></script>
       <div class="main">
         <p>Here is some of my art! I don't have much yet, but this will expand over time.
         <br>I work in multiple fields, so this page is split between each of those.</p>

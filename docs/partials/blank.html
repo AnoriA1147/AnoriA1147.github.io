@@ -39,14 +39,8 @@
   <div style="height:88%">
     <div class="leftside"></div>
     <div class="main-wrapper">
-      <div id="navbar"></div>
-      <script>
-        fetch('/partials/navbar.html')
-          .then(res => res.text())
-          .then(data => {
-            document.getElementById('navbar').innerHTML = data;
-          });
-      </script>
+      <div id="navbar-placeholder"></div>
+      <script src="/navbar.js" defer></script>
       <div class="main">
         <p> content </p>
       </div>
