@@ -1,16 +1,23 @@
+:root {
+  --head-purple: #bf7fff;
+  --side-lilac: #df9fff;
+  --bg-white: #ffffff;
+  --occular-purple: #7f33cc;
+}
+
 body{
   font-family:Calibri;
   font-size: 16px;
 }
 .leftside {
   width:10.416666666%; max-width:141.969px;
-  background-color:rgb(223,159,255);
+  background-color: var(--side-lilac);
   float:left;
   height:100%
 }
 .rightside {
   width:10.416666666%; max-width:141.969px;
-  background-color:rgb(223,159,255);
+  background-color: var(--side-lilac);
   float:right;
   height:100%
 }
@@ -24,14 +31,14 @@ body{
 }
 .header {
   height:40px;
-  background-color:rgb(191,127,255);
+  background-color: var(--head-purple);
   padding-right:10px; padding-left:10px;
   text-align:center
 }
 .footer {
   display: flex;
   height:40px; 
-  background-color:rgb(191,127,255); 
+  background-color: var(--head-purple); 
   align-items: center;
   justify-content: center;
 }

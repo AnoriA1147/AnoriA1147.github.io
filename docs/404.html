@@ -1,21 +1,33 @@
 <head>
+<!--constant meta tags-->
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+
   <title> 404 Error - Anori A </title>
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/style.css">
 
-  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --head-purple: #ff7f7f;
+      --side-lilac: #ff9faf;
+    }
+  </style>
 </head>
 
 <html>
 <body>
-  <div class="header" style="background-color:#ff7f7f">
+  <div class="header">
     <h1>404 Page Not Found</h1>
   </div>
   <div style="height:88%">
-    <div class="leftside" style="background-color:#ff9faf"></div>
+    <div class="leftside"></div>
     <div class="main-wrapper">
-      <div id="navbar" style="background-color:#ff9faf"></div>
+      <div id="navbar"></div>
       <script>
         fetch('/partials/navbar.html')
         .then(res => res.text())
@@ -34,9 +46,9 @@
         <a href="/">Haga clic aquí para volver a la página principal.</a>
       </div>
     </div>
-    <div class="rightside" style="background-color:#ff9faf"></div>
+    <div class="rightside"></div>
   </div>
-  <footer id="footer"></div>
+  <footer id="footer"></footer>
   <script>
     fetch('/partials/footer.html')
       .then(res => res.text())
