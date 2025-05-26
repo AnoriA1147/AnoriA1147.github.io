@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /partials/
+Disallow: /assets/
 
 Sitemap: https://anoria.gay/sitemap.xml

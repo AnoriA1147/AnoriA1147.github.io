@@ -7,7 +7,7 @@
 
 async function injectNavbar() {
   const host = document.getElementById('navbar-placeholder');
-  host.innerHTML = await (await fetch('/partials/navbar.html')).text();
+  host.innerHTML = await (await fetch('/assets/partials/navbar.html')).text();
   highlightActiveLink(host);
 }
 

@@ -2,7 +2,7 @@
 <head>
   <!--constant meta tags-->
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/style.css">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="rgb(191,127,255)">
   <link rel="icon" type="image/png" href="/images/favicon.png">
@@ -50,7 +50,7 @@
     <div class="leftside"></div>
     <div class="main-wrapper">
       <div id="navbar-placeholder"></div>
-      <script src="/navbar.js" defer></script>
+      <script src="/assets/scripts/navbar.js" defer></script>
       <div class="main">
         <p>Here is some of my art! I don't have much yet, but this will expand over time.
         <br>I work in multiple fields, so this page is split between each of those.</p>
@@ -105,12 +105,6 @@
     <div class="rightside"></div>
   </div>
   <footer id="footer"></footer>
-  <script>
-    fetch('/partials/footer.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('footer').innerHTML = data;
-      });
-  </script>
+  <script src="/assets/scripts/footer.js" defer></script>
 </body>
 </html>
