@@ -1,0 +1,7 @@
+Copyright © 2025 Anori A. All rights reserved.
+
+Unauthorized copying, distribution, modification, or creation of derivative works based on any part of this repository —including, but not limited to, source code, images, text, and markup— is strictly prohibited without the author’s express written consent.
+
+This repository is made available on GitHub solely for public viewing and personal, non-commercial browsing in accordance with GitHub’s Terms of Service. No other rights are granted.
+
+No license or other rights are granted, either express or implied.
