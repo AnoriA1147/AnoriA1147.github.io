@@ -6,40 +6,64 @@
   --hilite-yellow: #F2D03C;
 }
 
-body{
+html {
+  height: 100%;
+  margin: 0;
   font-family:Calibri;
   font-size: 16px;
 }
-.leftside {
-  width:10.416666666%; max-width:141.969px;
-  background-color: var(--side-lilac);
-  float:left;
-  height:100%
+
+/* The body is a rankwise grid with three rows:
+   header, middle-wrapper, and footer */
+body{
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /*eff 40px, 1fr, 40px*/
 }
-.rightside {
-  width:10.416666666%; max-width:141.969px;
-  background-color: var(--side-lilac);
-  float:right;
-  height:100%
-}
-.main-wrapper {
-  width:79.1666666666%;
-  float:left;
-  height:100%
-}
-.main {
-  padding-right:10px; padding-left:10px
-}
-.header {
+header {
+  display: flex; /*Remember, this flexbox tag only affects how things within the section will be aligned.*/
   height:40px;
   background-color: var(--head-purple);
-  padding-right:10px; padding-left:10px;
-  text-align:center
-}
-.footer {
-  display: flex;
-  height:40px; 
-  background-color: var(--head-purple); 
   align-items: center;
   justify-content: center;
+}
+footer {
+  display: flex;
+  height:40px; 
+  background-color: var(--head-purple);
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* The middle-wrapper is a filewise grid with three columns:
+   leftside, main-wrapper, and rightside */
+.middle-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 12% 1fr 12%; /*eff 141.969px, 1fr, 141.969px*/
+  height: auto;
+}
+.leftside {
+  height:100%;
+  /*width:10.416666666%; max-width:141.969px;*/
+  background-color: var(--side-lilac);
+}
+.rightside {
+  height:100%;
+  /*width:10.416666666%; max-width:141.969px;*/
+  background-color: var(--side-lilac);
+}
+.main-wrapper {
+  height:100%;
+  /*width:79.1666666666%;*/
+  background-color: var(--bg-white);
+}
+
+/* Outside the grid system*/
+.main {
+  padding-right:10px; padding-left:10px;
+  padding-top:10px; padding-bottom:10px;
+  margin:0px;
 }
