@@ -1,17 +1,31 @@
 <style>
+  /*flexbox container for the navbar*/
+  nav {
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: var(--head-purple);
+    height:20px;
+    padding-right:10px; padding-left:10px;
+  }
+  /*flexbox items in the navbar*/
   nav ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  nav li {
-    float: left;
-  }
+  /*link styles*/
   nav li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 0px 8px;
+    padding: 0px 5px;
     text-decoration: none;
   }
   nav li a:hover {
@@ -22,10 +36,8 @@
   }
 </style>
 
-<nav style="background-color: var(--head-purple)">
-  <ul style="height:20px; padding-right:10px; padding-left:10px">
-    <li> <a href="/">Homepage</a>
-    <li> <a href="/about">About Me</a>
-    <li> <a href="/gallery">Gallery</a>
-  </ul>
-</nav>
+<ul>
+  <li> <a href="/">Homepage</a>
+  <li> <a href="/about">About Me</a>
+  <li> <a href="/gallery">Gallery</a>
+</ul>

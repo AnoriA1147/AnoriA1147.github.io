@@ -28,14 +28,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-footer {
-  display: flex;
-  height:40px; 
-  background-color: var(--head-purple);
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
+/*footer*/
 
 /* The middle-wrapper is a filewise grid with three columns:
    leftside, main-wrapper, and rightside */
