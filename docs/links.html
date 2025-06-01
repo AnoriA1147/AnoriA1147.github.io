@@ -53,6 +53,8 @@
       text-align: center;
       text-decoration: none;
       color: var(--button-text);
+      box-shadow: 0 0 0px white;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /*if only i could transition so easily in real life*/
     }
     .contact-card span {
       text-decoration: none;
@@ -66,9 +68,36 @@
     }
     .contact-card:hover {
       color: black;
+      transform: scale(1.05);
       background-color: var(--hilite-yellow);
       box-shadow: 0 0 8px var(--hilite-yellow);
-      transition: background-color 0.3s ease, box-shadow 0.3s ease; /*if only i could transition so easily in real life*/
+    }
+
+    /*form styles*/
+    form {
+      background-color: var(--aside-periwinkle);
+      padding: 0;
+      margin: 1rem;
+    }
+    form fieldset {
+      display: flex;
+      flex-direction: column;
+      border: none;
+      border-top: black 1px solid;
+    }
+    input, textarea {
+      border-style: solid;
+      border-width: .5px;
+      border-color: darkgray;
+      margin: 1.5px;
+      border-radius: 5px;
+    }
+    input:focus, textarea:focus {
+      border-style: outset;
+      border-width: 2px;
+      border-color: #d369f1;
+      margin: 0px;
+      outline: none;
     }
   </style>
 </head>
@@ -94,7 +123,7 @@
               <img src="images/simpleicons/youtube.svg" alt="YouTube Icon (by simpleicons.org)">
               <span>My YouTube Channel (@AnoriA1147)</span>
             </a>
-            <a href="https://bsky.app/profile/anoria1147.bsky.social" target="_blank" class="contact-card" style="--button: #1185FE;">
+            <a href="https://bsky.app/profile/anoria1147.bsky.social" target="_blank" class="contact-card" style="--button: #1185FE; --button-text: white;">
               <img src="images/simpleicons/bluesky.svg" alt="Bluesky Icon (by simpleicons.org)">
               <span>My Bluesky (@anoria1147.bsky.social)</span>
             </a>
@@ -110,15 +139,43 @@
               <img src="images/simpleicons/pronounsdotpage.svg" alt="Pronouns.page Icon (by simpleicons.org)">
               <span>pronouns.page</span>
             </a>
-            <a href="https://pronombr.es/@AnoriA1147" target="_blank" class="contact-card" style="--button: #8b0f7a; --button-text: white;">
-              <img src="images/simpleicons/pronounsdotpage.svg" alt="Pronouns.page Icon (by simpleicons.org)">
-              <span>pronombr.es</span>
-            </a>
           </div>
         </section>
         <section>
-          <h2>Direct Contact</h2>
-          <p>If you need to contact me, you can reach me through DM or email.</p>
+          <h2>How to Reach Me</h2>
+          <p>I'm chill if you want to send a neat compliment, talk about art, ask me a question, or have some sort of idea. I'm also open to chatting about random special interst stuff, but I might not always be available.
+          <br>Please make sure to be respectful and not spam me with messages. If I don't respond immediately, please be patient. I will get to you soon! <small>I might be less likely to respond if I'm annoyed.</small>
+          <br>btw, don't ask me for personal information. I'm a private kinda person. Don't be creepy.</p>
+          <p>I should regularly to check DMs on <b>Bsky</b>, <b>Discord</b>, and <b>DeviantArt</b>.</p>
+          <p>If you're feeling formal and wish to email me, you can use this fancy form below.</p>
+          <form style="background-color: var(--aside-periwinkle);" action="mailto:vivienschoell@anoria.gay" method="POST" enctype="text/plain">
+            <fieldset style="border-top: none;">
+              <label for="name">Your Name (and maybe pronouns)</label>
+              <input type="text" id="name" name="name" required>
+              <small>(or username, or nickname, or whatever you want to be called)</small>
+            </fieldset>
+            <fieldset>
+              <label for="email">Your Email</label>
+              <input type="email" id="_replyto" name="email" required>
+              <small>(So I can respond to you easily)</small>
+            </fieldset>
+            <fieldset>
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required>
+              <span></span>
+            </fieldset>
+            <fieldset>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </fieldset>
+            <fieldset>
+              <button type="submit" style="display: flex; align-items: center; justify-content: center; gap: 5px">
+                <span>Send!</span>
+                <img src="images/heroicons/envelope.svg" alt="Envelope Icon (by heroicons.com)" width="20">
+              </button>
+            </fieldset>
+          </form>
+          <p>Alternatively, passenger pidgeons and scroll-bearing owls through the window are accepted.</p>
         </section>
       </div>
     </div>
