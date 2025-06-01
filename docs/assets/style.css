@@ -7,6 +7,24 @@
   --aside-periwinkle: #dfdfff;
 }
 
+h2 {
+  margin: 0px;
+}
+section {
+  margin-block-end: 1em;
+}
+ul {
+  padding-inline-start: 1.5em;
+}
+.colorbox {
+  background-color: var(--aside-periwinkle);
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/*grid system*/
 html {
   height: 100%;
   margin: 0;
