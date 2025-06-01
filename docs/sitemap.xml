@@ -3,20 +3,42 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://anoria.gay/</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://anoria.gay/about</loc>
-    <lastmod>2025-05-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://anoria.gay/gallery</loc>
-    <lastmod>2025-05-28</lastmod>
+    <lastmod>2025-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://anoria.gay/gallery</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://anoria.gay/links</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://anoria.gay/colophon</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
+<!-- This sitemap is generated manually. -->
+<!-- Last updated: 2025-06-01 -->
+<!-- Note: Ensure to update the lastmod date whenever content changes. -->
+<!-- Priority guidelines:
+     - 1.0: Homepage
+     - 0.8: Important pages (e.g., about, gallery)
+     - 0.7: Regular pages (e.g., links)
+     - 0.5: Less critical pages (e.g., colophon)
+     - 0.1: Archived or depreciated updated pages.
+-->
