@@ -4,4 +4,21 @@ Unauthorized copying, distribution, modification, or creation of derivative work
 
 This repository is made available on GitHub solely for public viewing and personal, non-commercial browsing in accordance with GitHub’s Terms of Service. No other rights are granted.
 
+---
+
+THIRD-PARTY LICENSES
+
+This project makes use of the following third-party assets, which are licensed under their respective terms:
+
+- Simple Icons (https://simpleicons.org)
+  Licensed under CC0 1.0 Universal (Public Domain Dedication)
+
+- Heroicons (https://heroicons.com)
+  Licensed under the MIT license. © Tailwind Labs.
+  see /docs/assets/images/heroicons/LICENSE
+
+These assets are subject to their own license terms, as noted in the appropriate folders, and are not covered under the "All rights reserved" portion above.
+
+---
+
 No license or other rights are granted, either express or implied.
