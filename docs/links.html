@@ -27,29 +27,48 @@
   <meta name="twitter:image"       content="https://anoria.gay/images/anori_side_profile.png">
 
   <style>
-    .contact_grid {
+    /*this is the main contact grid class*/
+    .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 5px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      row-gap: .5rem; 
       list-style-type: none;
       padding-left: 0;
       margin: 0;
     }
-    .contact_grid li {
+    /*This should be applied to each link within li*/
+    .contact-card {
+      /*defaults to head-purple, but can be overridden in each evocation*/
+      --button: var(--head-purple);
+      --button-text: black;
+
       display: grid;
       grid-template-columns: auto 1fr;
       align-items: center;
-      background-color: var(--side-lilac);
+      height: 35px;
+
+      background-color: var(--button);
       border-radius: 5px;
       text-align: center;
+      text-decoration: none;
+      color: var(--button-text);
     }
-    .contact_grid li a {
+    .contact-card span {
       text-decoration: none;
       padding: 5px;
     }
-    .contact_grid li img {
+    .contact-card img {
       display: block;
       padding: 5px;
+      height: 25px;
+      width: auto;
+    }
+    .contact-card:hover {
+      color: black;
+      background-color: var(--hilite-yellow);
+      box-shadow: 0 0 8px var(--hilite-yellow);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease; /*if only i could transition so easily in real life*/
     }
   </style>
 </head>
@@ -66,36 +85,36 @@
       <div class="main">
         <section>
           <h2>Online Socials</h2>
-          <ul class="contact_grid">
-            <li>
-              <img src="images/favicon.png" alt="Anori" width="25">
-              <a href="https://anoria.gay">My Website (you're here!)</a>
-            </li>
-            <li>
-              <img src="images/simpleicons/youtube.svg" alt="YouTube Icon (by simpleicons.org)" width="25">
-              <a href="https://www.youtube.com/channel/UC23h3hp57gLDbVI0v4b3e5A" target="_blank">My Videos (@AnoriA1147)</a>
-            </li>
-            <li>
-              <img src="images/simpleicons/bluesky.png" alt="Bluesky Icon (by simpleicons.org)" width="25">
-              <a href="https://bsky.app/profile/anoria1147.bsky.social" target="_blank">My Bluesky (@anoria1147.bsky.social)</a>
-            </li>
-            <li>
+          <div class="contact-grid">
+            <a href="https://anoria.gay" class="contact-card">
+              <img src="images/favicon.png" alt="Anori">
+              <span>My Website (you're here!)</span>
+            </a>
+            <a href="https://www.youtube.com/channel/UC23h3hp57gLDbVI0v4b3e5A" target="_blank" class="contact-card" style="--button: #FF0000; --button-text: white;">
+              <img src="images/simpleicons/youtube.svg" alt="YouTube Icon (by simpleicons.org)">
+              <span>My YouTube Channel (@AnoriA1147)</span>
+            </a>
+            <a href="https://bsky.app/profile/anoria1147.bsky.social" target="_blank" class="contact-card" style="--button: #1185FE;">
+              <img src="images/simpleicons/bluesky.svg" alt="Bluesky Icon (by simpleicons.org)">
+              <span>My Bluesky (@anoria1147.bsky.social)</span>
+            </a>
+            <a href="https://www.deviantart.com/anoria1147" target="_blank" class="contact-card" style="--button: #05CC47;">
               <img src="images/simpleicons/deviantart.svg" alt="DeviantArt Icon (by simpleicons.org)" width="25">
-              <a href="https://www.deviantart.com/anoria1147" target="_blank">My DeviantArt (anoria1147)</a>
-            </li>
-            <li>
-              <img src="images/simpleicons/x.svg" alt="Twitter Icon (by simpleicons.org)" width="25">
-              <a href="https://twitter.com/AnoriA1147" target="_blank">My Twitter (@AnoriA1147)</a>
-            </li>
-            <li>
-              <img src="images/simpleicons/pronounsdotpage.svg" alt="Pronouns.page Icon (by simpleicons.org)" width="25">
-              <a href="https://en.pronouns.page/@AnoriA1147" target="_blank">pronouns.page</a>
-            </li>
-            <li>
-              <img src="images/simpleicons/pronounsdotpage.svg" alt="Pronouns.page Icon (by simpleicons.org)" width="25">
-              <a href="https://pronombr.es/@AnoriA1147" target="_blank">pronombr.es</a>
-            </li>
-          </ul>
+              <span>My DeviantArt (anoria1147)</span>
+            </a>
+            <a href="https://twitter.com/AnoriA1147" target="_blank" class="contact-card" style="--button: #1DA1F2;">
+              <img src="images/simpleicons/x.svg" alt="Twitter Icon (by simpleicons.org)">
+              <span>My Twitter (@AnoriA1147)</span>
+            </a>
+            <a href="https://en.pronouns.page/@AnoriA1147" target="_blank" class="contact-card" style="--button: #c71585; --button-text: white;">
+              <img src="images/simpleicons/pronounsdotpage.svg" alt="Pronouns.page Icon (by simpleicons.org)">
+              <span>pronouns.page</span>
+            </a>
+            <a href="https://pronombr.es/@AnoriA1147" target="_blank" class="contact-card" style="--button: #8b0f7a; --button-text: white;">
+              <img src="images/simpleicons/pronounsdotpage.svg" alt="Pronouns.page Icon (by simpleicons.org)">
+              <span>pronombr.es</span>
+            </a>
+          </div>
         </section>
         <section>
           <h2>Direct Contact</h2>
