@@ -1,3 +1,6 @@
+/* ===== */
+/* General styles */
+/* ===== */
 :root {
   --head-purple: #bf7fff;
   --side-lilac: #df9fff;
@@ -6,7 +9,6 @@
   --hilite-yellow: #F2D03C;
   --aside-periwinkle: #dfdfff;
 }
-
 h2 {
   margin: 0px;
 }
@@ -23,8 +25,16 @@ ul {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+.main {
+  margin:0px;
+  padding-right:10px; padding-left:10px;
+  padding-top:10px; padding-bottom:10px;
+  background-color: var(--bg-white);
+}
 
-/*grid system*/
+/* ===== */
+/* Layout styles and Super Grid System */
+/* ===== */
 html {
   height: 100%;
   margin: 0;
@@ -72,10 +82,11 @@ header {
   /*width:79.1666666666%;*/
 }
 
-/* Outside the grid system*/
-.main {
-  margin:0px;
-  padding-right:10px; padding-left:10px;
-  padding-top:10px; padding-bottom:10px;
-  background-color: var(--bg-white);
+@media screen and (max-width: 768px) {
+  .middle-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0 1fr 0; /*eff 141.969px, 1fr, 141.969px*/
+    height: auto;
+  }
 }
