@@ -39,6 +39,19 @@ ul {
 [data-lang="es"] {
   display: none;
 }
+/* no script catcher */
+.noscript-warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: red;
+  color: white;
+  height: auto;
+  min-height: 20px;
+  padding-right:10px; padding-left:10px;
+}
 
 /* ===== */
 /* Layout styles and Super Grid System */
