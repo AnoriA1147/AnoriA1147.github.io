@@ -25,6 +25,25 @@
         el.style.display = 'none';
       }
     });
+
+    // Swap each <img>’s alt text based on data-alt-en / data-alt-es
+    document.querySelectorAll('img[data-alt-en]').forEach(img => {
+      const newAlt = img.getAttribute(lang === 'en' ? 'data-alt-en' : 'data-alt-es');
+      if (newAlt !== null) {
+        img.alt = newAlt;
+      }
+    });
+
+    // Swap <title>
+    const titleEl = document.querySelector('head > title');
+    const newTitle = titleEl.getAttribute(lang === 'en' ? 'data-meta-en' : 'data-meta-es');
+    if (newTitle) titleEl.textContent = newTitle + ' - Anori A';
+
+    // Swap <meta name="description">
+    const metaDesc = document.querySelector('head > meta[name="description"]');
+    const newDesc = metaDesc.getAttribute(lang === 'en' ? 'data-meta-desc-en' : 'data-meta-desc-es');
+    if (newDesc) metaDesc.setAttribute('content', newDesc);
+
   }
 
   // 3. Delegated click handler: look for clicks on #lang-toggle

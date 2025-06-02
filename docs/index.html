@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <head>
   <!--constant meta tags-->
   <meta charset="UTF-8">
@@ -7,10 +7,15 @@
   <meta name="theme-color" content="rgb(191,127,255)">
   <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anori A">
 
   <!--Title and description-->
-  <title>Homepage - Anori A</title>
-  <meta name="description" content="Welcome to Anori A.gay, a small spot for my art, animation, writing, and creative expression, with a splash of queerness and the sciences throughout.">
+  <title data-meta-en="Homepage" data-meta-es="Inicio">Homepage - Anori A</title>
+  <meta name="description" 
+    data-meta-en="Welcome to Anori A.gay, a small spot for my art, animation, writing, and creative expression, with a splash of queerness and the sciences throughout."
+    data-meta-es="Bienvenido a Anori A.gay, mi pequeño lugarito para mi arte, animación, escritura, y expresión creativa, con un salpicadura de queerness y las ciencias oquiera."
+    content="Welcome to Anori A.gay, a small spot for my art, animation, writing, and creative expression, with a splash of queerness and the sciences throughout."
+  >
   <link rel="canonical" href="https://anoria.gay/" type="text/html">
 
   <!--Embed cards-->
@@ -43,7 +48,10 @@
 
 <body>
   <header>
-    <h1>Anori A's Homepage</h1>
+    <h1>
+      <span data-lang="en">Anori A's Homepage</span>
+      <span data-lang="es">Inicio de Anori A</span>
+    </h1>
   </header>
   <div class="middle-wrapper">
     <div class="leftside"></div>
@@ -57,32 +65,54 @@
       <script src="/assets/scripts/navbar.js" defer></script>
       <main class="main">
         <aside>
-          <h3>Where you can find me</h3>
+          <h3>
+            <span data-lang="en">Where you can find me</span>
+            <span data-lang="es">Dónde puedes hallarme</span>
+          </h3>
           <ul>
-            <li><a href="https://www.youtube.com/channel/UC23h3hp57gLDbVI0v4b3e5A" target="_blank">My videos</a>
-            <li><a href="https://en.pronouns.page/@AnoriA1147" target="_blank">My pronouns (pronouns.page)</a>
-            <li><a href="https://pronombr.es/@AnoriA1147" target="_blank">Mis pronombres (pronombr.es)</a>
-            <li><a href="https://bsky.app/profile/anoria1147.bsky.social" target="_blank">Find me on <del>Twitter</del> <del>X</del> bsky!</a>
-            <li><a href="https://www.deviantart.com/anoria1147" target="_blank">DeviantArt</a>
+            <li><a href="https://www.youtube.com/channel/UC23h3hp57gLDbVI0v4b3e5A" target="_blank">
+              <span data-lang="en">My videos</span>
+              <span data-lang="es">Mis videos</span>
+            </a></li>
+            <li><a href="https://www.deviantart.com/anoria1147" target="_blank">
+              <span data-lang="en">My art on DeviantArt</span>
+              <span data-lang="es">Mis obras en DeviantArt</span>
+            </a></li>
+            <li>
+              <a data-lang="en" href="https://en.pronouns.page/@AnoriA1147" target="_blank">My pronouns (pronouns.page)</a>
+              <a data-lang="es" href="https://pronombr.es/@AnoriA1147" target="_blank">Mis pronombres (pronombr.es)</a>
+            </li>
+            <li>  <a href="https://bsky.app/profile/anoria1147.bsky.social" target="_blank">
+              <span data-lang="en">Find me on <del>Twitter</del> <del>X</del> bsky!</span>
+              <span data-lang="es">¡Hállame en <del>Twitter</del> <del>X</del> bsky!</span>
+            </a></li>
           </ul>
         </aside>
         <section>
-          <button id="lang-toggle" aria-label="Change language / Cambiar idioma">ES</button>
           <h2>
             <span data-lang="en">Hallu! I'm Anori!</span>
             <span data-lang="es">¡Holaa! ¡Soy Anori!</span>
           </h2>
-          <img src="images/anori_front_profile.png" alt="Front-facing digital drawing of Anori, a stylized cream-colored cat with purple ears and yellow eyes, with a calm slightly-melancholic expression, on a simple background." width="300">
-          <p data-lang="en">
-            I am primarily an artist, animator, and writer.
-            I have dabbled in a multitude of other interests (hyperfixations), ranging across computer science, astrophysics, biochemistry, music, and linguistics.
-          </p>
-          <p data-lang="es">
-            Soy principalmente artista, animadora y escritora.
-            He incursionado en una multitud de otros intereses (hiperfijaciones), que abarcan la informática, la astrofísica, la bioquímica, la música y la lingüística.
+          <img 
+            src="images/anori_front_profile.png" width="300"
+            alt="Front-facing digital drawing of Anori, a stylized cream-colored cat with purple ears and yellow eyes, with a calm slightly-melancholic expression, on a simple background." 
+            data-alt-en="Front-facing digital drawing of Anori, a stylized cream-colored cat with purple ears and yellow eyes, with a calm slightly-melancholic expression, on a simple background."
+            data-alt-es="Dibujo digital de frente de Anori, un gato de estilo animado, de color crema con orejas purpúreas y ojos amarillos, con una expresión tranquila/ligera-melancólica, sobre un fondo simple." 
+          >
+          <p>
+            <span data-lang="en">
+              I am a queer, neurodivergent, creative person who wants to share my art and works online.
+              Primarily, I'm an artist, animator, and writer, though I have worked on a many projects in other mediums.
+              I have dabbled in a multitude of other interests (hyperfixations), ranging across computer science, astrophysics, biochemistry, music, and linguistics.</span>
+            <span data-lang="es">
+              Yo soy una persona queer, divertida, neurodivergente, y creativa que quiere a compartir mis obras en línea.
+            Principalmente, soy une artista, animadore, y escritore, aunque he creado muchos proyectos en otros medios.
+            Me he metido en una gama de otros intereses (hiperfijaciones), divagando por la informática, la astrofísica, la bioquímica, la música, y la lingüística.
+            </span>
           </p>
           <p>
-            This site is barebones now, but it will hopefully have more soon! :3.
+            <span data-lang="en">This site is barebones now, but it will hopefully have more soon! :3.</span>
+            <span data-lang="es">Este sitio es muy simple ahora, pero ¡ojalá que tenga más pronto! :3.</span>
           </p>
         </section>
       </main>
