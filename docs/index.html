@@ -50,7 +50,7 @@
     <div class="main-wrapper">
       <nav id="navbar-placeholder"></nav>
       <script src="/assets/scripts/navbar.js" defer></script>
-      <div class="main">
+      <main class="main">
         <aside>
           <h3>Where you can find me</h3>
           <ul>
@@ -61,12 +61,26 @@
             <li><a href="https://www.deviantart.com/anoria1147" target="_blank">DeviantArt</a>
           </ul>
         </aside>
-        <h2>Hallu! I'm Anori!</h2>
-        <img src="images/anori_front_profile.png" alt="Front-facing digital drawing of Anori, a stylized cream-colored cat with purple ears and yellow eyes, with a calm slightly-melancholic expression, on a simple background." width="300">
-        <p>I am primarily an artist, animator, and writer.
-        <br>I have dabbled in a multitude of other interests (hyperfixations), ranging across computer science, astrophysics, biochemistry, music, and linguistics.</p>
-        <p>This site is barebones now, but it will hopefully have more soon! :3.</p>
-      </div>
+        <section>
+          <button id="lang-toggle" aria-label="Change language / Cambiar idioma">ES</button>
+          <h2>
+            <span data-lang="en">Hallu! I'm Anori!</span>
+            <span data-lang="es">¡Holaa! ¡Soy Anori!</span>
+          </h2>
+          <img src="images/anori_front_profile.png" alt="Front-facing digital drawing of Anori, a stylized cream-colored cat with purple ears and yellow eyes, with a calm slightly-melancholic expression, on a simple background." width="300">
+          <p data-lang="en">
+            I am primarily an artist, animator, and writer.
+            I have dabbled in a multitude of other interests (hyperfixations), ranging across computer science, astrophysics, biochemistry, music, and linguistics.
+          </p>
+          <p data-lang="es">
+            Soy principalmente artista, animadora y escritora.
+            He incursionado en una multitud de otros intereses (hiperfijaciones), que abarcan la informática, la astrofísica, la bioquímica, la música y la lingüística.
+          </p>
+          <p>
+            This site is barebones now, but it will hopefully have more soon! :3.
+          </p>
+        </section>
+      </main>
     </div>
     <div class="rightside"></div>
   </div>
@@ -74,5 +88,6 @@
     <span>© 2025 Anori A</span>
   </footer>
   <script src="/assets/scripts/footer.js" defer></script>
+  <script src="/assets/scripts/lang-toggle.js" defer></script>
 </body>
 </html>

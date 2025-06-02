@@ -31,6 +31,14 @@ ul {
   padding-top:10px; padding-bottom:10px;
   background-color: var(--bg-white);
 }
+/* language switcher */
+[data-lang="en"] {
+  /* English is the fallback language, in case js is not enabled */
+  display: block;
+}
+[data-lang="es"] {
+  display: none;
+}
 
 /* ===== */
 /* Layout styles and Super Grid System */
@@ -82,6 +90,9 @@ header {
   /*width:79.1666666666%;*/
 }
 
+/* ===== */
+/* Mobile responsive styles */
+/* ===== */
 @media screen and (max-width: 768px) {
   .middle-wrapper {
     width: 100%;

@@ -1,17 +1,22 @@
 /*no voy a mentir, copié y pegué todo este script de ChatGPT.*/
 
 /* --- nav.js  ------------------------------------------------------------
-   1) inject navbar.html exactly as before
+   1) inject navbar.html
    2) then call highlightActiveLink() to add class="active"
+   3) dispatch a custom "navReady" event so other scripts know the nav is in-place
 ------------------------------------------------------------------------- */
 
 async function injectNavbar() {
   const host = document.getElementById('navbar-placeholder');
+  // 1) fetch & inject the navbar HTML
   host.innerHTML = await (await fetch('/assets/partials/navbar.html')).text();
+  // 2) highlight the active link
   highlightActiveLink(host);
+  // 3) ANNOUNCE the navbar (and its #lang-toggle button) is now in the DOM
+  document.dispatchEvent(new Event('navReady'));
 }
 
-/* ------------ NEW: ignore ".html" everywhere -------------------------- */
+/* ------------ highlightActiveLink -------------------------- */
 function highlightActiveLink(navRoot) {
   const current = normalisePath(location.pathname);
 
@@ -21,6 +26,7 @@ function highlightActiveLink(navRoot) {
   });
 }
 
+/* ------------ normalisePath -------------------------- */
 /* Strip .html, index.html, trailing slash, query, hash, leading slash */
 function normalisePath(path) {
   return path
@@ -31,6 +37,7 @@ function normalisePath(path) {
     .replace(/^\/+/, '');              // drop leading “/”, so “/about” → “about”
 }
 
+// Inject the navbar when the DOM is ready
 document.addEventListener('DOMContentLoaded', injectNavbar);
 
 /*
