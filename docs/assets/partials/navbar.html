@@ -1,44 +1,58 @@
 <style>
-  /*flexbox container for the navbar*/
+  /*navbar is a flexbox container*/
   nav {
     position: sticky;
     top: 0;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    
     background-color: var(--head-purple);
     height:20px;
     padding-right:10px; padding-left:10px;
-  }
-  /*flexbox items in the navbar*/
-  nav ul {
+
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0px;
   }
-  /*link styles*/
-  nav li a, nav li button {
+  /*flexbox elements*/
+  nav a, button {
     display: block;
+    width: auto;
+    height: 100%;
     color: black;
     text-align: center;
     padding: 0px 5px;
     text-decoration: none;
   }
-  nav li a:hover {
-    background-color: var(--hilite-yellow);
+  nav a {
+    border-color: black;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
   }
+  nav button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  /*activation styles*/
   nav a.active {
     background-color: var(--side-lilac);
+    border-radius: 5px 5px 0px 0px;
+    border-width: 1px 1px 0px 1px;
+    height: calc(100% - 1px);
+  }
+  nav a:hover, nav button:hover {
+    background-color: var(--hover-yellow);
   }
 </style>
 
-<ul>
-  <li><a href="/">Homepage</a></li>
-  <li><a href="/about">About Me</a></li>
-  <li><a href="/gallery">Gallery</a></li>
-  <li><button id="lang-toggle" aria-label="Change language / Cambiar idioma">ES</button></li>
-</ul>
+<a href="/"><span data-lang="en">Homepage</span><span data-lang="es">Inicio</span></a>
+<a href="/about"><span data-lang="en">About Me</span> <span data-lang="es">Sobre mí</span></a>
+<a href="/gallery"><span data-lang="en">Gallery</span> <span data-lang="es">Galería</span></a>
+<a href="/links"><span data-lang="en">Links</span> <span data-lang="es">Mis Enlaces</span></a>
+<button id="lang-toggle" style="margin-left:auto" aria-label="Change language / Cambiar idioma">
+  <img id="lang-toggle" src="/images/heroicons/language.svg" style="height: 16px; vertical-align: middle;">
+  <img id="lang-toggle" src="/images/heroicons/arrow-long-right.svg" style="height: 16px; vertical-align: middle; margin-right: 2.5px;">
+  <span id="lang-toggle" data-lang="es">English</span>
+  <span id="lang-toggle" data-lang="en">Español</span>
+</button>
