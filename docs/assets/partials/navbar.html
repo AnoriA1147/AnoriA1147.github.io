@@ -33,6 +33,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-radius: 0px;
   }
   /*activation styles*/
   nav a.active {
@@ -50,9 +51,11 @@
 <a href="/about"><span data-lang="en">About Me</span> <span data-lang="es">Sobre mí</span></a>
 <a href="/gallery"><span data-lang="en">Gallery</span> <span data-lang="es">Galería</span></a>
 <a href="/links"><span data-lang="en">Links</span> <span data-lang="es">Mis Enlaces</span></a>
-<button id="lang-toggle" style="margin-left:auto" aria-label="Change language / Cambiar idioma">
+<button id="lang-toggle" style="margin-left:auto" aria-label="Change language / Cambiar idioma" data-original-display="flex">
   <img id="lang-toggle" src="/images/heroicons/language.svg" style="height: 16px; vertical-align: middle;">
   <img id="lang-toggle" src="/images/heroicons/arrow-long-right.svg" style="height: 16px; vertical-align: middle; margin-right: 2.5px;">
-  <span id="lang-toggle" data-lang="es">English</span>
-  <span id="lang-toggle" data-lang="en">Español</span>
+  <span>
+    <div id="lang-toggle" data-lang="es">English</div>
+    <div id="lang-toggle" data-lang="en">Español</div>
+  </span>
 </button>

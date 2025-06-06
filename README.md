@@ -20,8 +20,9 @@ This is a personal website hosted at the custom domain [www.AnoriA.gay](https://
 
 Mobile Development
 - GitHub Mobile
-- Weee – the Git Monster (git client / version control)
-- Kodex (development software)
+- "Weee – the Git Monster" by 铠嵘 蒋 (git client / version control)
+- Kodex by Bruno Philipe Resende-Silva (development software)
+- Simple Server by Bitsbaker LLC (local dev server)
 
 ## Structure
 ```

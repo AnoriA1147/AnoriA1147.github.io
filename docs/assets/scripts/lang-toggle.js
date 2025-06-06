@@ -20,7 +20,8 @@
     // Show only the matching language nodes
     document.querySelectorAll('[data-lang]').forEach(el => {
       if (el.getAttribute('data-lang') === lang) {
-        el.style.display = 'block';
+        /*fallback to block if data-original-display is not set*/
+        el.style.display = el.dataset.originalDisplay || 'block';
       } else {
         el.style.display = 'none';
       }
