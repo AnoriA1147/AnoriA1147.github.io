@@ -59,5 +59,5 @@ cd AnoriA1147.github.io
 Active – ongoing development
 
 ## License
-See [`LICENSE.txt`](LICENSE.txt) for details.
 © 2025 Anori A. All rights reserved.
+See [`LICENSE.txt`](LICENSE.txt) for details.
